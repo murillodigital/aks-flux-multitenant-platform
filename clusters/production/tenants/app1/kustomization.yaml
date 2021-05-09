@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - service-account.yaml
+  - tenant-repository.yaml
+  - tenant-application.yaml
