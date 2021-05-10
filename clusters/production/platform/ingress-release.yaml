@@ -5,7 +5,7 @@ metadata:
   name: nginx-ingress
   namespace: platform
 spec:
-  interval: 5m
+  interval: 1m
   chart:
     spec:
       chart: nginx-ingress

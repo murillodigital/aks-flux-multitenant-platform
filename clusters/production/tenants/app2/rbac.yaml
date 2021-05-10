@@ -10,16 +10,20 @@ metadata:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
+  labels:
+    toolkit.fluxcd.io/tenant: app2
   namespace: app2
   name: app2-full-access-role
 rules:
-- apiGroups: ["*"] # "" indicates the core API group
+- apiGroups: ["*"]
   resources: ["*"]
   verbs: ["*"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
+  labels:
+    toolkit.fluxcd.io/tenant: app2
   name: app2-sa-role-binding
   namespace: app2
 subjects:

@@ -4,5 +4,5 @@ metadata:
   name: app1
   namespace: app1
 spec:
-  interval: 5m
+  interval: 1m
   url: https://github.com/wkp-demo/aks-flux-multitenant-app1

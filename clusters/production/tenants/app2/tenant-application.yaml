@@ -4,7 +4,8 @@ metadata:
   name: app2-application
   namespace: app2
 spec:
-  interval: 5m0s
+  serviceAccountName: app2-sa
+  interval: 1m
   path: ./deployment/production
   prune: true
   sourceRef:
